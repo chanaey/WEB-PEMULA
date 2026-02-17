@@ -37,4 +37,36 @@ pre{background:#000;padding:10px;border-radius:8px;overflow:auto;}
   cursor:pointer;
   transition:0.4s;
 }
+
 #homeBanner:hover{opacity:0.9;}
+
+/* EDITOR + LIVE PREVIEW */
+.editor-wrapper{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.editor-column{
+  flex:1;
+  min-width:280px;
+}
+
+iframe{
+  width:100%;
+  min-height:300px;
+  border-radius:10px;
+  border:1px solid #334155;
+  background:#fff;
+  margin-top:10px;
+}
+
+/* RESPONSIVE MOBILE */
+@media(max-width:600px){
+  .editor-wrapper{
+    flex-direction:column;
+  }
+  .card-row, .card-info, .tutorial-btns{
+    flex-direction:column;
+  }
+}
