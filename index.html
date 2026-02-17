@@ -39,12 +39,23 @@
 
 <!-- EDITOR -->
 <section id="editorPage" class="hidden">
-  <button class="btn" onclick="openTutorial()">📘 Tutorial</button>
-  <button class="btn" onclick="saveProject()">💾 Save</button>
-  <button class="btn" onclick="openLoad()">📂 Open Save</button>
-  
-  <textarea id="code" placeholder="Tulis HTML di sini..."></textarea>
-  
+
+  <div class="editor-wrapper">
+    <!-- TEXTAREA -->
+    <div class="editor-column">
+      <button class="btn" onclick="openTutorial()">📘 Tutorial</button>
+      <button class="btn" onclick="saveProject()">💾 Save</button>
+      <button class="btn" onclick="openLoad()">📂 Open Save</button>
+      
+      <textarea id="code" placeholder="Tulis HTML di sini..."></textarea>
+    </div>
+
+    <!-- LIVE PREVIEW -->
+    <div class="editor-column">
+      <h3>Hasil Preview</h3>
+      <iframe id="preview" title="Preview HTML"></iframe>
+    </div>
+  </div>
 
   <div class="card card-info">
     <div>🧮 Karakter: <b id="charCount">0</b></div>
@@ -60,6 +71,7 @@
     <strong>Harga: 35k / web</strong><br><br>
     <button class="btn" onclick="beliWeb()">🟢 Beli via Email</button>
   </div>
+
 </section>
 
 <!-- MODAL IKLAN -->
